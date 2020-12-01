@@ -12,7 +12,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 sequelize
   .sync({ force: true })
@@ -23,7 +23,6 @@ sequelize
     console.error(err);
   });
 
-app.set("jwt-secret", process.env.JWT_SECRET);
 app.use("/", routes);
 
 app.listen(PORT, () => {
