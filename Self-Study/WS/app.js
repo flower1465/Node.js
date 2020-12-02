@@ -23,7 +23,6 @@ sequelize
     console.error(err);
   });
 
-app.set("jwt-secret", process.env.JWT_SECRET);
 app.use("/", routes);
 
 app.listen(PORT, () => {
