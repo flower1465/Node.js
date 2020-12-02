@@ -14,10 +14,6 @@ module.exports = class User extends (
           type: Sequelize.INTEGER,
           allowNull: false,
         },
-        refreshToken: {
-          type: Sequelize.STRING(300),
-          allowNull: true,
-        },
       },
       {
         sequelize,
