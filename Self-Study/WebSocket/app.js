@@ -13,7 +13,7 @@ const indexRouter = require("./routes");
 const connect = require("./schemas");
 
 const app = express();
-app.set("port", process.env.PORT || 8005);
+const PORT = process.env.PORT || 8005;
 app.set("view engine", "html");
 nunjucks.configure("views", {
   express: app,
@@ -61,8 +61,8 @@ app.use((err, req, res, next) => {
   res.render("error");
 });
 
-const server = app.listen(app.get("port"), () => {
-  console.log(app.get("port"), "번 포트에서 대기중");
+const server = app.listen(PORT, () => {
+  console.log(PORT, "번 포트에서 대기중");
 });
 
 webSocket(server, app, sessionMiddleware);
