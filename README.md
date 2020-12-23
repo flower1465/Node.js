@@ -1,1 +1,1 @@
-Self_Study
+Study
