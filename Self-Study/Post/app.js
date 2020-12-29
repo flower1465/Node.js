@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 3001;
 sequelize
   .sync({ force: false })
   .then(() => {
-    console.log("데이터베이스 연결 성공");
+    console.log("Database connection successful");
   })
   .catch((err) => {
     console.error(err);
