@@ -46,8 +46,6 @@ app.use((req, res, next) => {
   next();
 });
 
-console.log("test");
-
 app.use("/", indexRouter);
 
 app.use((req, res, next) => {
