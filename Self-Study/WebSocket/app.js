@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const express = require("express");
 const path = require("path");
 const morgan = require("morgan");
@@ -15,6 +14,7 @@ const connect = require("./models");
 // const connect = require("./schemas");
 
 const app = express();
+s;
 const PORT = process.env.PORT || 8005;
 app.set("view engine", "html");
 nunjucks.configure("views", {
@@ -68,7 +68,6 @@ const server = app.listen(PORT, () => {
 });
 
 webSocket(server, app, sessionMiddleware);
-=======
 const express = require("express");
 const path = require("path");
 const morgan = require("morgan");
@@ -137,4 +136,3 @@ const server = app.listen(PORT, () => {
 });
 
 webSocket(server, app, sessionMiddleware);
->>>>>>> master
