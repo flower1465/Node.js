@@ -10,7 +10,8 @@ const ColorHash = require("color-hash");
 dotenv.config();
 const webSocket = require("./socket");
 const indexRouter = require("./routes");
-const connect = require("./schemas");
+const connect = require("./models");
+// const connect = require("./schemas");
 
 const app = express();
 const PORT = process.env.PORT || 8005;
