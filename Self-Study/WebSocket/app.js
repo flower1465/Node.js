@@ -14,7 +14,7 @@ const connect = require("./models");
 // const connect = require("./schemas");
 
 const app = express();
-s;
+
 const PORT = process.env.PORT || 8005;
 app.set("view engine", "html");
 nunjucks.configure("views", {
