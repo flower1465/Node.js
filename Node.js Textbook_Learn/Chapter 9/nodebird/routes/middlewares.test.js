@@ -13,6 +13,7 @@ describe("isLoggedIn", () => {
     };
     isLoggedIn(req, res, next);
     expect(next).toBeCalledTimes(1);
+    x;
   });
 
   test("로그인 되어있지 않으면 isLoggedIn이 에러를 응답해야 함", () => {
