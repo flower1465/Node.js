@@ -12,7 +12,7 @@ describe("isLoggedIn", () => {
       isAuthenticated: jest.fn(() => true),
     };
     isLoggedIn(req, res, next);
-    expect(next).toBeCalledTimes(1);
+    expect(next).toHaveBeenCalledTimes(1);
   });
 
   test("로그인 되어있지 않으면 isLoggedIn이 에러를 응답해야 함", () => {
